@@ -104,6 +104,7 @@ class AdminController extends Controller
             ]);
     
             if ($tenant) {
+                Cache::store('file')->flush();
                 return response()->json([
                     'status'    => true,
                     'message' => 'Tenant registered',
