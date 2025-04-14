@@ -1,0 +1,55 @@
+.btn-primary {
+    background: rgb(255, 255, 255) !important;
+    border: solid 1px #000;
+    color: #000;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background: #000 !important;
+    border: solid 1px #fff;
+
+}
+
+#addTenantPanel {
+    max-height: 0;
+ 
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    background: #f8f9fa;
+    padding: 0 1rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+#addTenantPanel.show {
+    height: 200px;
+    max-height: 200px; /* Adjust depending on content */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.input-requred {
+    font-size:  10px;
+}
+
+.menu-button:hover {
+    color: #fff !important;
+    background: #000;
+    border-radius: 5px;
+}
+
+.dropdown-toggle {
+    color:#000 !important;
+}
+
+.page-link {
+    color:#000 !important;
+    background-color: #f0f0f0;
+    font-size: 12px;
+}
+
+.active>.page-link{
+    background-color: #000;
+    color:#fff !important;
+    border: solid 1px #000;
+}
