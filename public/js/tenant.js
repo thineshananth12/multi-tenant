@@ -1,6 +1,5 @@
 $(document).ready(function () {
     loadUsers();
-    $("#loadUsers").removeClass('d-none');
     $("#userName").html(localStorage.getItem('username'));
 });
 

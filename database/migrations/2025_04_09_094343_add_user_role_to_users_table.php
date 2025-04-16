@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('role')->after('tenant_id')->nullable();
+            $table->integer('role')->after('tenant_id')->nullable()->comment('1=>Super Admin, 2=>Tenant Admin, 3=>Tenant User');
         });
     }
 
