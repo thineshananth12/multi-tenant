@@ -12,14 +12,25 @@ class TenantSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Tenant::create([
+        $tenant1 = \App\Models\Tenant::create([
             'name' => 'Tenant 1',
-            'domain' => 'tenant1.localhost',
+            'prefix' => 'tenant1t',
         ]);
         
-        \App\Models\Tenant::create([
+        $tenant2 = \App\Models\Tenant::create([
             'name' => 'Tenant 2',
-            'domain' => 'tenant2.localhost',
+            'prefix' => 'tenant2',
         ]);
+
+        $tenant1Users = \App\Models\User::factory(48)->create([
+            'tenant_id' => $tenant1->id,
+        ]);
+
+        $tenant2Users = \App\Models\User::factory(48)->create([
+            'tenant_id' => $tenant2->id,
+            
+        ]);
+
+        $this->call(UserSeeder::class);
     }
 }
