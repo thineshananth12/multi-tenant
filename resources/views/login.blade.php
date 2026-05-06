@@ -10,7 +10,7 @@
 
   <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
-      <h4 class="mb-4 text-center">Login Page</h4>
+      <h4 class="mb-4 text-center">Login Pages</h4>
 
       <div id="message" class="text-danger w-100 text-center" ></div>
 
